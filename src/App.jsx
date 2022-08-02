@@ -1,6 +1,10 @@
+import { Fragment } from 'react'
+import { Navbar } from './components/index'
 const App = () => {
   return (
-    <div>App</div>
+    <Fragment>
+      <Navbar />
+    </Fragment>
   )
 }
 
