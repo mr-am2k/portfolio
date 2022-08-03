@@ -1,16 +1,13 @@
 .navbarContainer {
+  margin-top: 0;
   height: 6rem;
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: var(--background-primary);
+  background-color: rgba(249, 249, 249, 0.9);
   position: fixed;
+  top: 0;
   box-shadow: 0 8px 15px -4px gray;
-}
-.navbarDesktopLinks {
-  display: flex;
-  align-items: center;
-  width: 100%;
 }
 .navbarLogo {
   min-width: 30%;
@@ -19,7 +16,7 @@
   padding: 0.5rem 0 0.5rem 1rem;
 }
 .navbarLogo img {
-  width: 4rem;
+  width: 5rem;
   height: 5rem;
   border-radius: 50%;
 }
@@ -27,16 +24,18 @@
   padding-left: 2rem;
   font-family: var(--font-logo);
 }
-.navbarMenu {
-  width: 70%;
+.navbarLinks {
   display: flex;
+  flex: 1;
   justify-content: flex-end;
-  margin-right: 1rem;
+}
+.navbarDesktopLinks {
+  display: flex;
 }
 .navbarParagraph {
-  width: 18%;
-  font-family: var(--font-family);
+  margin-right: 2.5rem;
   text-align: center;
+  font-family: var(--font-family);
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -48,54 +47,67 @@
   color: #7b7b7b;
   font-size: 1.3rem;
 }
-
-.mobileMenu {
+.navbarMobileLinks {
   display: none;
-  position: relative;
-  margin-left: 1rem;
+}
+.menuIcon {
+  margin-right: 1rem;
 }
 .mobileMenuContainer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  background-color: var(--background-secondary);
+  position: absolute;
+  top: 6rem;
+  right: 0;
+  background-color: rgba(27, 26, 23, 0.9);
   width: 100vw;
   height: 100vh;
-  position: absolute;
-  top: 2.5rem;
-  right: 0;
-  margin-top: 1.5rem;
+  padding-top: 3rem;
+}
+.mobileMenuContainer p {
+  text-align: left;
+  padding-left: 4rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+.mobileMenuContainer p a {
+  color: var(--text-color-secondary);
 }
 
-@media screen and (max-width: 1000px) {
-  .navbarMenu p {
-    width: 20%;
-    font-size: 1rem;
-  }
-  .navbarMenu p a:hover {
-    font-size: 1.1rem;
-  }
+.openMenu {
+  animation-name: openMenu;
+  animation-duration: 1.5s;
 }
-@media screen and (max-width: 900px) {
-  .navbarMenu {
+
+@keyframes openMenu {
+  from {
     display: none;
   }
-  .mobileMenu {
+  to {
+    display: block;
+  }
+
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .navbarDesktopLinks {
+    display: none;
+  }
+  .navbarMobileLinks {
     display: block;
   }
   .navbarParagraph {
     width: 100%;
     text-align: left;
-    padding-left: 2rem;
-  }
-  .navbarLink {
-    color: var(--text-color-secondary);
   }
 }
 
 @media screen and (max-width: 500px) {
-    .navbarLogo h1 {
-        width: 50%;
-      }
+  .navbarLogo h1 {
+    width: 50%;
+  }
 }
