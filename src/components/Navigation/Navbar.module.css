@@ -104,10 +104,24 @@
     width: 100%;
     text-align: left;
   }
+  .navbarLogo img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .navbarLogo h1 {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .navbarLogo h1 {
     width: 50%;
+  }
+  .navbarLogo img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .navbarLogo h1 {
+    font-size: 1.2rem;
   }
 }
