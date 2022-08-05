@@ -1,9 +1,10 @@
 import { Fragment } from 'react'
-import { Navbar } from './components/index'
+import { Navbar, HomePage } from './components/index'
 const App = () => {
   return (
     <Fragment>
       <Navbar />
+      <HomePage />
     </Fragment>
   )
 }
