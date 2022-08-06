@@ -1,24 +1,13 @@
 .homePage {
-  padding-top: 10%;
+  padding-top: 20%;
   margin-bottom: 2rem;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   flex: 1;
   font-family: var(--font-family);
-}
-.homePage h1 {
-  animation: floatDown 1s ease-in-out forwards;
-}
-.homePage h4 {
-  animation: floatDown 1s ease-in-out forwards;
-}
-.homePage p {
-  animation: floatDown 1s ease-in-out forwards;
-}
-.homePage button{
-  animation: floatDown 1s ease-in-out forwards;
 }
 .homePage h1 span {
   color: #3b9ae1;
@@ -46,13 +35,10 @@
 .homePage h1 {
   animation: floatDown 1s ease-in-out forwards;
 }
-.homePage h4 {
-  animation: floatDown 1s ease-in-out forwards;
-}
 .homePage p {
   animation: floatDown 1s ease-in-out forwards;
 }
-.homePage button{
+.homePage button {
   animation: floatDown 1s ease-in-out forwards;
 }
 /*Creating animation*/
@@ -67,6 +53,11 @@
   }
 }
 /*Media queries*/
+@media screen and (max-width: 950px) {
+  .homePage {
+    height: auto;
+  }
+}
 @media screen and (max-width: 750px) {
   .homePage h1 {
     font-size: 1.5rem;

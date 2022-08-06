@@ -3,7 +3,6 @@
   padding: 0 20%;
   background-color: var(--background-color);
   position: absolute;
-  top: 0;
   z-index: 1;
 }
 .navbar{
