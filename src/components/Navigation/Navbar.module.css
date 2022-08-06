@@ -23,7 +23,7 @@
 .navbarLogo h1 {
   padding-left: 2rem;
   font-family: var(--font-logo);
-  color: var(--text-color-secondary);
+  color: var(--blue-color);
 }
 .navbarLinks {
   display: flex;
@@ -59,11 +59,12 @@
   position: absolute;
   top: 6rem;
   right: 0;
-  background-color: var(--background-color);
+  background-color:var(--background-color);
   width: 100vw;
   min-height: 1000rem;
   padding-top: 2rem;
   border-top: 1px solid black;
+  z-index: 900000000;
 }
 .mobileNavbarHeader {
   margin: 0 4rem;

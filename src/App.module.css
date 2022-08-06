@@ -1,0 +1,22 @@
+.container {
+  margin-top: 6rem;
+  padding: 0 20%;
+  background-color: var(--background-color);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.navbar{
+    position: absolute;
+    z-index: 2;
+}
+@media screen and (max-width: 950px) {
+  .homePage {
+    padding: 0 10%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container {
+    padding: 0 5%;
+  }
+}

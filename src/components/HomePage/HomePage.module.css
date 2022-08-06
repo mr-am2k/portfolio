@@ -1,16 +1,28 @@
 .homePage {
-  margin-top: 6rem;
-  padding: 10% 30%;
-  height: 90vh;
+  padding-top: 10%;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   flex: 1;
   font-family: var(--font-family);
-  background-color: var(--background-color);
 }
-
+.homePage h1 {
+  animation: floatDown 1s ease-in-out forwards;
+}
+.homePage h4 {
+  animation: floatDown 1s ease-in-out forwards;
+}
+.homePage p {
+  animation: floatDown 1s ease-in-out forwards;
+}
+.homePage button{
+  animation: floatDown 1s ease-in-out forwards;
+}
+.homePage h1 span {
+  color: #3b9ae1;
+}
 .homePage button {
   margin-top: 1rem;
   width: 15rem;
@@ -30,19 +42,48 @@
   height: 4.1rem;
   cursor: pointer;
 }
-
-@media screen and (max-width: 950px) {
-  .homePage{
-    height: fit-content;
+/*Applying animations */
+.homePage h1 {
+  animation: floatDown 1s ease-in-out forwards;
+}
+.homePage h4 {
+  animation: floatDown 1s ease-in-out forwards;
+}
+.homePage p {
+  animation: floatDown 1s ease-in-out forwards;
+}
+.homePage button{
+  animation: floatDown 1s ease-in-out forwards;
+}
+/*Creating animation*/
+@keyframes floatDown {
+  0% {
+    transform: translate(0, -100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }
-
+/*Media queries*/
 @media screen and (max-width: 750px) {
-  .homePage h1{
+  .homePage h1 {
     font-size: 1.5rem;
   }
-  .homePage p{
+  .homePage p {
     line-height: 1.5rem;
   }
 }
-
+@media screen and (max-width: 550px) {
+  .homePage button {
+    width: 13rem;
+    height: 3.5rem;
+    font-size: 1rem;
+  }
+  .homePage button:hover {
+    width: 13rem;
+    height: 3.5rem;
+    font-size: 1rem;
+  }
+}
