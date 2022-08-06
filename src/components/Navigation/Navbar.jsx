@@ -39,11 +39,19 @@ const Navbar = () => {
                     )}
                     {toggleMenu && (
                         <div className={menuClass}>
-                            {
-                                links.map((link, index) => (
-                                    <p key={index} className={classes.navbarParagraph}><a onClick={() => setToggleMenu(false)} className={classes.navbarLink} href={link.link}>{link.label}</a></p>
-                                ))
-                            }
+                            <div className={classes.mobileNavbarHeader}>
+                                <p>Let's work together <br/>and create something wonderful</p>
+                            </div>
+                            <div className={classes.mobileNavbarLinks}>
+                                {
+                                    links.map((link, index) => (
+                                        <p key={index} className={classes.navbarParagraph}><a onClick={() => setToggleMenu(false)} className={classes.navbarLink} href={link.link}>{link.label}</a></p>
+                                    ))
+                                }
+                            </div>
+                            <div className={classes.mobileNavbarContact}>
+                                
+                            </div>
                         </div>
                     )}
                 </div>

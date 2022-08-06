@@ -23,6 +23,7 @@
 .navbarLogo h1 {
   padding-left: 2rem;
   font-family: var(--font-logo);
+  color: var(--text-color-secondary);
 }
 .navbarLinks {
   display: flex;
@@ -47,6 +48,7 @@
   color: #7b7b7b;
   font-size: 1.3rem;
 }
+/*Mobile links*/
 .navbarMobileLinks {
   display: none;
 }
@@ -57,24 +59,39 @@
   position: absolute;
   top: 6rem;
   right: 0;
-  background-color: rgba(16, 15, 15, 0.9);
+  background-color: var(--background-color);
   width: 100vw;
-  height: 100vh;
-  padding-top: 3rem;
+  min-height: 1000rem;
+  padding-top: 2rem;
+  border-top: 1px solid black;
 }
-.mobileMenuContainer p {
+.mobileNavbarHeader {
+  margin: 0 4rem;
+  border-bottom: 1px solid gray;
+}
+.mobileNavbarHeader p,
+.mobileNavbarLinks p {
   text-align: left;
+  color: var(--text-color-secondary);
+  font-family: var(--font-family);
+}
+.mobileNavbarHeader p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.mobileNavbarLinks {
+  margin-top: 3.5rem;
+}
+.mobileNavbarLinks p {
   padding-left: 4rem;
   line-height: 3rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
-.mobileMenuContainer p a {
-  color: var(--text-color-secondary);
+.mobileNavbarContent {
 }
-
 .openMenu {
   animation-name: openMenu;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 @keyframes openMenu {
@@ -113,7 +130,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .navbarLogo h1 {
     width: 50%;
   }
@@ -123,5 +140,11 @@
   }
   .navbarLogo h1 {
     font-size: 1.2rem;
+  }
+  .mobileNavbarHeader p {
+    font-size: 1.2rem;
+  }
+  .mobileNavbarLinks p {
+    font-size: 1.5rem;
   }
 }
