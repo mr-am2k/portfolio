@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import { Navbar, HomePage, AboutMe } from './components/index'
+import { Navbar, HomePage, AboutMe, Skills } from './components/index'
 import classes from './App.module.css'
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
       <div className={classes.container}>
         <HomePage />
         <AboutMe />
+        <Skills/>
       </div>
     </Fragment>
   )

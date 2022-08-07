@@ -21,7 +21,7 @@
   flex-direction: column;
 }
 .aboutMeContent p {
-    width: 100%;
+  width: 100%;
 }
 .aboutMeImage {
   display: flex;
@@ -44,6 +44,7 @@
   width: 13rem;
   height: 20rem;
 }
+/*Media queries*/
 @media screen and (max-width: 1150px) {
   .aboutMe {
     flex-wrap: nowrap;

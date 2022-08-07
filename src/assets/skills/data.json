@@ -1,0 +1,46 @@
+[
+    {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png",
+        "name": "HTML"
+    },
+    {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/1200px-CSS.3.svg.png",
+        "name": "CSS"
+    },
+    {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
+        "name": "Javascript"
+    },
+    {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png",
+        "name": "Typescript"
+    },
+    {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
+        "name": "React"
+    },
+    {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1280px-Nextjs-logo.svg.png",
+        "name": "NextJS"
+    },
+    {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/2048px-Microsoft_.NET_logo.svg.png",
+        "name": ".NET"
+    },
+    {
+        "url": "https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg",
+        "name": "MSSQL"
+    },
+    {
+        "url": "https://seeklogo.com/images/F/firebase-logo-402F407EE0-seeklogo.com.png",
+        "name": "Firebase"
+    },
+    {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png",
+        "name": "Git"
+    },
+    {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png",
+        "name": "C++"
+    }
+]
