@@ -1,6 +1,16 @@
 import { Fragment } from 'react'
-import { Navbar, HomePage, AboutMe, Skills } from './components/index'
+import { Navbar, HomePage, AboutMe, Skills, Projects, SingleProject } from './components/index'
+import { Routes, Route } from "react-router-dom";
 import classes from './App.module.css'
+
+const Home = () => (
+  <>
+    <HomePage />
+    <AboutMe />
+    <Skills />
+    <Projects />
+  </>
+)
 const App = () => {
   return (
     <Fragment>
@@ -8,9 +18,10 @@ const App = () => {
         <Navbar />
       </div>
       <div className={classes.container}>
-        <HomePage />
-        <AboutMe />
-        <Skills/>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/:projectName' element={<SingleProject />} />
+        </Routes>
       </div>
     </Fragment>
   )

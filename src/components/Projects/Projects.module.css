@@ -1,0 +1,32 @@
+.projectsContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+.projectsContainer h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  color: var(--blue-color);
+}
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+  width: 100%;
+}
+.item {
+  margin-bottom: 5rem;
+}
+/*Media queries*/
+@media screen and (max-width: 750px) {
+  .item {
+    margin-right: 2%;
+    margin-bottom: 2rem;
+  }
+}
