@@ -16,12 +16,13 @@
 .projectContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 2rem;
   width: 100%;
 }
 .item {
   margin-bottom: 5rem;
+  margin-right: 5rem;
 }
 /*Media queries*/
 @media screen and (max-width: 750px) {

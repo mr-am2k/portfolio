@@ -38,3 +38,8 @@
     font-size: 1.3rem;
     cursor: pointer;
 }
+@media screen and (max-width:550px) {
+  .projectContainer {
+    width: 100%;
+  }
+}

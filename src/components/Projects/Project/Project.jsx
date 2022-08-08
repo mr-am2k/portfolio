@@ -1,7 +1,7 @@
 import classes from './Project.module.css'
-import {useNavigate} from 'react-router-dom'
-import { data } from '../../../assets/projects/data'
-const Project = ({image,name}) => {
+import { useNavigate } from 'react-router-dom'
+
+const Project = ({ image, name }) => {
     const navigate = useNavigate();
     const redirect = () => {
         const link = name.replaceAll(' ', '-').toLowerCase();

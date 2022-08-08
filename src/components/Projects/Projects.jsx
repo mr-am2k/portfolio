@@ -3,7 +3,7 @@ import Project from './Project/Project'
 import { data } from '../../assets/projects/data'
 const Projects = () => {
     return (
-        <div className={classes.projectsContainer}>
+        <div id='projects' className={classes.projectsContainer}>
             <h1>Projects</h1>
             <div className={classes.projectContainer}>
                 {data.map((element, index) => (

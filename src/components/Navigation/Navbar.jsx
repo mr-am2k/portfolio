@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { HashLink as Link } from 'react-router-hash-link';
 import logo from '../../assets/logo.jpg'
 import classes from './Navbar.module.css'
 
@@ -17,7 +18,7 @@ const Navbar = () => {
                 <div className={classes.navbarDesktopLinks}>
                     {
                         links.map((link, index) => (
-                            <p key={index} className={classes.navbarParagraph}><a className={classes.navbarLink} href={link.link}>{link.label}</a></p>
+                            <Link key={index} className={classes.navbarParagraph} to={'/' + link.link}>{link.label}</Link>
                         ))
                     }
                 </div>
@@ -45,7 +46,7 @@ const Navbar = () => {
                             <div className={classes.mobileNavbarLinks}>
                                 {
                                     links.map((link, index) => (
-                                        <p key={index} className={classes.navbarParagraph}><a onClick={() => setToggleMenu(false)} className={classes.navbarLink} href={link.link}>{link.label}</a></p>
+                                        <Link key={index} className={classes.navbarParagraph}  onClick={() => setToggleMenu(false)} to={'/' + link.link}>{link.label}</Link>
                                     ))
                                 }
                             </div>
