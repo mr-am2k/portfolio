@@ -13,7 +13,7 @@ const Home = () => (
 )
 const App = () => {
   return (
-    <Fragment>
+    <div className={classes.wrapper}>
       <div className={classes.navbar}>
         <Navbar />
       </div>
@@ -23,8 +23,11 @@ const App = () => {
           <Route path='/:projectName' element={<SingleProject />} />
         </Routes>
       </div>
-      <Footer/>
-    </Fragment>
+      <div className={classes.footer}>
+
+        <Footer />
+      </div>
+    </div>
   )
 }
 

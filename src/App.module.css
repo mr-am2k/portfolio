@@ -2,12 +2,6 @@
   margin-top: 6rem;
   padding: 0 20%;
   background-color: var(--background-color);
-  position: absolute;
-  z-index: 1;
-}
-.navbar{
-    position: absolute;
-    z-index: 5;
 }
 @media screen and (max-width: 950px) {
   .homePage {
