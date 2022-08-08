@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import { Navbar, HomePage, AboutMe, Skills, Projects, SingleProject } from './components/index'
+import { Navbar, HomePage, AboutMe, Skills, Projects, SingleProject, Footer } from './components/index'
 import { Routes, Route } from "react-router-dom";
 import classes from './App.module.css'
 
@@ -23,6 +23,7 @@ const App = () => {
           <Route path='/:projectName' element={<SingleProject />} />
         </Routes>
       </div>
+      <Footer/>
     </Fragment>
   )
 }

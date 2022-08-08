@@ -7,7 +7,7 @@ import classes from './Navbar.module.css'
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
     const menuClass = toggleMenu ? `${classes.mobileMenuContainer} ${classes.openMenu}` : `${classes.mobileMenuContainer}`
-    const links = [{ link: '#home', label: 'Home' }, { link: '#aboutme', label: 'About Me' }, { link: '#skills', label: 'Skills' }, { link: '#projects', label: 'Projects' }, { link: '#contact', label: 'Contact' },]
+    const links = [{ link: '#home', label: 'Home' }, { link: '#aboutme', label: 'About Me' }, { link: '#skills', label: 'Skills' }, { link: '#projects', label: 'Projects' }]
     return (
         <div className={classes.navbarContainer}>
             <div className={classes.navbarLogo}>
