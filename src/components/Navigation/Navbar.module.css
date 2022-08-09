@@ -110,6 +110,17 @@
   font-size: 3.2rem;
   color: var(--text-color-primary);
 }
+.iconFb{
+  font-size: 2.8rem;
+  padding: 0.2rem;
+  box-shadow: 0 8px 15px -4px gray;
+  border-radius: 15px;
+}
+
+.iconFb:hover{
+  font-size: 3rem;
+  color: var(--text-color-primary);
+}
 .openMenu {
   animation-name: openMenu;
   animation-duration: 1s;

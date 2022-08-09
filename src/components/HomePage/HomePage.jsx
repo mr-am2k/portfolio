@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
-import { AiFillGithub, AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
+import { AiFillGithub, AiFillInstagram } from 'react-icons/ai';
+import { BsFacebook } from 'react-icons/bs'
 import classes from './HomePage.module.css';
 const HomePage = () => {
     return (
@@ -15,7 +16,7 @@ const HomePage = () => {
             <div className={classes.contactIcons}>
                 <a href='https://github.com/mr-am2k' target='_blank'><AiFillGithub className={classes.icon} /> </a>
                 <a href='https://www.instagram.com/a.muaamer/' target='_blank'><AiFillInstagram className={classes.icon} /> </a>
-                <a href='https://www.facebook.com/muamer.alickovic.16' target='_blank'><AiFillFacebook className={classes.icon} /> </a>
+                <a href='https://www.facebook.com/muamer.alickovic.16' target='_blank'><BsFacebook className={classes.iconFb} /> </a>
             </div>
         </div>
     )

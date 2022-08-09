@@ -4,7 +4,7 @@ import ecommerece from './images/ecommerce.PNG'
 export const data = [{
     image: mealapp,
     name: "Pappito Meals",
-    overview: "This is one of my first React projects. User here has listed available meals, and he can add them to the cart. After that he can pay the order. Some of the things I focused on here are conditional rendering, state management, using ContextAPI, etc.",
+    overview: "This is one of my first React projects. Here user has listed available meals, and he can add them to the cart. After that he can pay the order. Some of the things I focused on here are conditional rendering, state management, using ContextAPI, etc.",
     technologies: ['React', 'Javascript', 'ContextAPI'],
     githubLink: 'https://github.com/mr-am2k/MealApp',
     websiteLink: 'https://astounding-pie-a9131c.netlify.app/'
