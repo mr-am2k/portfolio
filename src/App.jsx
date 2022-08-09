@@ -17,16 +17,23 @@ const App = () => {
       <div className={classes.navbar}>
         <Navbar />
       </div>
-      <div className={classes.container}>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/:projectName' element={<SingleProject />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path='/' element={
+          <div className={classes.container}>
+            <Home />
+          </div>
+        } />
+        <Route path='/:projectName' element={
+          <div className={classes.singleProject}>
+            <SingleProject />
+          </div>
+        } />
+      </Routes>
       <div className={classes.footer}>
 
         <Footer />
       </div>
+
     </div>
   )
 }
