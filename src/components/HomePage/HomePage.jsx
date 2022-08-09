@@ -10,7 +10,7 @@ const HomePage = () => {
             <p>I'm software engineering student passionate about web development.
                 Currently I'm working on some personal projects to improve my knowledge about both, front-end and back-end.
             </p>
-            <a href='../../assets/muamercv.pdf' download="Muamer's resume">
+            <a href={require('../../assets/muamercv.pdf')} download="Muamer's resume.pdf">
                 <button type='button'>Download Resume</button>
             </a>
             <div className={classes.contactIcons}>
