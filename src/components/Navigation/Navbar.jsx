@@ -1,7 +1,9 @@
+/* eslint-disable react/jsx-no-target-blank */
 import { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { AiFillGithub, AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
+import {BsFillTerminalFill} from 'react-icons/bs'
 import { HashLink as Link } from 'react-router-hash-link';
-import logo from '../../assets/logo.jpg'
 import classes from './Navbar.module.css'
 
 const Navbar = () => {
@@ -11,7 +13,7 @@ const Navbar = () => {
     return (
         <div className={classes.navbarContainer}>
             <div className={classes.navbarLogo}>
-                <img src={logo} alt='Logo' />
+                <BsFillTerminalFill className={classes.logo}/>
                 <h1>Muamer Alickovic</h1>
             </div>
             <div className={classes.navbarLinks}>
@@ -41,17 +43,20 @@ const Navbar = () => {
                     {toggleMenu && (
                         <div className={menuClass}>
                             <div className={classes.mobileNavbarHeader}>
-                                <p>Let's work together <br/>and create something wonderful</p>
+                                <p>Let's work together <br />and create something wonderful</p>
                             </div>
                             <div className={classes.mobileNavbarLinks}>
                                 {
                                     links.map((link, index) => (
-                                        <Link key={index} className={classes.navbarParagraph}  onClick={() => setToggleMenu(false)} to={'/' + link.link}>{link.label}</Link>
+                                        <Link key={index} className={classes.navbarParagraph} onClick={() => setToggleMenu(false)} to={'/' + link.link}>{link.label}</Link>
                                     ))
                                 }
                             </div>
-                            <div className={classes.mobileNavbarContact}>
-                                
+                            <div className={classes.contactIcons}>
+                                <h3>Let's connect</h3>
+                                <a href='https://github.com/mr-am2k' target='_blank'><AiFillGithub className={classes.icon} /> </a>
+                                <a href='https://www.instagram.com/a.muaamer/' target='_blank'><AiFillInstagram className={classes.icon} /> </a>
+                                <a href='https://www.facebook.com/muamer.alickovic.16' target='_blank'><AiFillFacebook className={classes.icon} /> </a>
                             </div>
                         </div>
                     )}

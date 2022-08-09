@@ -31,6 +31,25 @@
   height: 4.1rem;
   cursor: pointer;
 }
+.contactIcons{
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+.contactIcons a{
+  color: var(--blue-color);
+  margin-right: 1rem ;
+  text-decoration: none;
+}
+.icon{
+  font-size: 3.2rem;
+  box-shadow: 0 8px 15px -4px gray;
+  border-radius: 15px;
+  margin-right: 1rem;
+}
+.icon:hover{
+  font-size: 3.4rem;
+  color: var(--text-color-primary);
+}
 /*Applying animations */
 .homePage h1 {
   animation: floatDown 1s ease-in-out forwards;
