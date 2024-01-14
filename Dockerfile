@@ -1,12 +1,16 @@
-FROM node:20.9.0-alpine as build
-WORKDIR /app
-COPY . .
+# Prva faza: Izgradnja Node.js aplikacije
+FROM node:20-alpine as build-stage
+
+ENV PORT=3000
+
+WORKDIR /app-portfolio
+COPY . /app-portfolio
 RUN npm install
 RUN npm run build
-#production environment
-FROM nginx:stable-alpine
-COPY --from=build /app/build /usr/share/nginx/html/
-COPY --from=build /app/nginx/nginx.conf /etc/nginx/conf.d/default.conf
+
+# Druga faza: Upotreba Nginx za posluživanje aplikacije
+FROM nginx:1.22.1-alpine as prod-stage
+
+COPY --from=build-stage /app-portfolio/build /usr/share/nginx/html
 EXPOSE 80
-EXPOSE 3001
 CMD ["nginx", "-g", "daemon off;"]
